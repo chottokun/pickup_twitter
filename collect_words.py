@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#import setting
 
 import configparser
 import tweepy
@@ -48,7 +47,7 @@ def get_twitter_message(words, count):
         text_tmp = re.sub('@.*', '', text_tmp)
         text_tmp = re.sub('http.*', '', text_tmp)
         text_tmp = re.sub('https.*', '', text_tmp)
-        text_tmp = re.sub('#.*', '', text_tmp)
+#        text_tmp = re.sub('#.*', '', text_tmp)
         text_tmp = re.sub('\n', '', text_tmp)
         text_tmp = text_tmp.strip()
         if text_tmp != '':
